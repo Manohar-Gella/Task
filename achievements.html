@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achievements - My Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navigation -->
+    <nav class="bg-gray-800 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="index.html" class="text-white text-lg font-bold">Manohar Gella</a>
+            <div>
+                <a href="index.html" class="text-gray-300 hover:text-white mx-2">Home</a>
+                <a href="achievements.html" class="text-gray-300 hover:text-white mx-2">Achievements</a>
+                <a href="projects.html" class="text-gray-300 hover:text-white mx-2">Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Achievements Page Content -->
+    <section class="container mx-auto py-20">
+        <h2 class="text-4xl font-bold text-gray-900 mb-10 text-center">My Achievements</h2>
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold">Won 4th place in International Robotics Compitetion - Palestine</h3>
+                <p class="text-gray-700 mt-2">Made a water drone which is made for marine rescue, controlled by a RC remote for the sea shore.</p>
+                <p class="text-gray-500 mt-2">Date: January 2021</p>
+            </div>
+            <!-- Repeat for more achievements -->
+        </div>
+        <br>
+        <div class="space-y-8">
+            <div class="bg-white p-6 rounded-lg shadow-lg">
+                <h3 class="text-2xl font-bold">Finalist - Eureka Juniors IIT BOMBAY</h3>
+                <p class="text-gray-700 mt-2">Pitched the startup idea and got into finl round.</p>
+                <p class="text-gray-500 mt-2">Date: January 2021</p>
+            </div>
+            <!-- Repeat for more achievements -->
+        </div>
+    </section>
+
+    
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" class="fixed bottom-4 right-4 bg-blue-500 text-white p-2 rounded-full hidden">
+        ↑
+    </button>
+
+    <script>
+        const scrollTopBtn = document.getElementById("scrollTopBtn");
+        window.onscroll = function() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                scrollTopBtn.classList.remove("hidden");
+            } else {
+                scrollTopBtn.classList.add("hidden");
+            }
+        };
+        scrollTopBtn.onclick = function() {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+    </script>
+</body>
+</html>
